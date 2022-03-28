@@ -1,0 +1,85 @@
+.bottom__nav__items {
+    width: 100%;
+
+    .bottom__nav__container__items {
+        position: fixed;
+        display: flex;
+        bottom: -100%;
+        right: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;;
+        z-index: 40;
+        background-color: $bg;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        box-shadow: 0px -.5px 5px #888;
+        transition: .4s all ease;
+        margin: auto;
+        padding: 1rem 1rem 0rem 1rem;
+
+        .bottom__nav__contents__items {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+
+            .items {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: space-evenly;
+                gap: 2rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+
+                a {
+                    color: $heading;
+                }
+
+                .uil {
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    padding-top: 5px;
+                    letter-spacing: 0.1rem;
+                }
+
+                .first__row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-between;
+                    gap: 2rem;
+                }
+
+                .second__row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-between;
+                    gap: 2rem;
+                }
+            }
+
+            .close__menu {
+                width: 100%;
+                display: flex;
+                font-size: 1.4rem;
+                justify-content: flex-end;
+                padding: 0rem 0rem 1rem 0rem;;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+$mont: 'Montserrat', sans-serif;
+
+// COLORS 
+
+$heading: #1E3D58;
+$sub-heading: #607D8B;
+$main-btn: #057DCD;
+$main-btn-shadow: #015892;
+$bg: #E8EEF1;
+
+@import "general";
+@import "nav";
+@import "home";
+@import "about";
+@import "projects";
+@import "bottom-nav";
+@import "bottom-menu";
+@import "social-links";
+@import "mediaqueries";

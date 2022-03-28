@@ -1,0 +1,706 @@
+@media screen and (max-width: 340px) {
+    .home__buttons {
+        margin: 1.5rem 0rem 0.5rem 0rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+
+        .resume__btn {
+            margin-left: 0rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .bottom__nav__items {
+        width: 100%;
+    
+        .bottom__nav__container__items {
+            position: fixed;
+            display: flex;
+            bottom: -100%;
+            right: 0;
+            left: 0;
+            height: 30%;
+            width: 100%;;
+            z-index: 40;
+            background-color: $bg;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+            box-shadow: 0px -.5px 5px #888;
+            transition: .4s all ease;
+            margin: auto;
+            padding: 1rem 1rem 0rem 1rem;
+    
+            .bottom__nav__contents__items {
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+    
+                .items {
+                    width: 90%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-evenly;
+                    gap: 2rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+    
+                    .uil {
+                        font-size: 1rem;
+                    }
+    
+                    p {
+                        padding-top: 5px;
+                        letter-spacing: 0.1rem;
+                    }
+    
+                    .first__row {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        gap: 2rem;
+                    }
+    
+                    .second__row {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        gap: 2rem;
+                    }
+                }
+    
+                .close__menu {
+                    width: 100%;
+                    display: flex;
+                    font-size: 1.1rem;
+                    justify-content: flex-end;
+                    padding: 0rem 0rem 1rem 0rem;;
+                }
+            }
+        }
+    
+    }
+    
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .home {
+        &__title {
+            font-size: 45px;
+            font-weight: 800;
+            color: $heading;
+        }
+    
+        &__subtitle {
+            font-size: 26px;
+            font-weight: 700;
+            color: $sub-heading;
+            margin: 0.5rem 0rem 0.5rem 0rem;
+        }
+    
+        &__description {
+            width: 70%;
+            font-size: 15px;
+            font-weight: 500;
+            color: $sub-heading;
+            padding: 0rem 3rem 0rem 0rem;
+        }
+    }
+}
+
+@media screen and (min-width: 767px){
+    .projects {
+
+        .projects__contents {
+                
+            .projects__data {
+            
+                .projects__title {
+                    color: $heading;
+                    font-size: 2.8rem;
+                    font-weight: 800;
+
+                    span {
+                        border-bottom: 4px solid $main-btn;
+                    }
+                }
+            }
+        }
+        .projects__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .project__card {
+                width: 100%;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                gap: 0.5rem;
+                background-color: #26354C;
+                overflow: hidden;  
+    
+                a {
+                    color: white;
+                }
+    
+                .card__title {
+                    color: white;
+                    font-size: 1rem;
+                    padding-bottom: 0.5rem;
+                    cursor: default;
+                }
+    
+                .card__data {
+                    overflow: hidden;  
+                    width: 100%;
+                    padding: 1rem;
+                    gap: 10rem;
+                }
+    
+                .open__project {
+                    font-size: 1.5rem;
+                    padding-top: 0.5rem;
+    
+                    .uil-github-alt {
+                        padding-right: 0.5rem;
+                    }
+                }
+    
+                p {
+                    color: $sub-heading;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    padding-bottom: 0.3rem;
+                    cursor: default;
+                }
+                
+                img {
+                    opacity: .7;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    border-top-right-radius: 4px;
+                    border-top-left-radius: 4px;
+                    
+                    &:hover {
+                        transform: scale(1.5);
+                        overflow: hidden;
+                        opacity: 1;
+                        transition: .3s all ease;
+                    }
+                }
+    
+                .card__thumbnail {
+                    overflow: hidden;  
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+
+    .bottom__nav {
+        display: none;
+    }
+
+    .nav {
+        .nav__list__mobile {
+            display: none;
+            li {
+                a {
+                    display: none;
+                }
+            }
+        }
+
+        .nav__menu {
+            .nav__list__desktop {
+                display: flex;
+            }
+        
+            .logo {
+                display: flex;
+            }
+        }
+    }
+
+    .social__links {
+        display: flex;
+    }
+
+    .home__data {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6rem;
+    }
+
+    .home__title {
+        font-size: 50px;
+        font-weight: 800;
+        color: $heading;
+    }
+
+    .home__subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        color: $sub-heading;
+        margin: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    .home__description {
+        width: 80%;
+        font-size: 18px;
+        font-weight: 500;
+        color: $sub-heading;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+
+    .bottom__nav__items {
+        display: none;
+    }
+
+    .about {
+        padding-top: 1rem;
+        height: 100%;
+        width: 100%;
+    
+        &__container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+    
+        &__contents {
+            width: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .about__data {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+    
+                .about__title {
+                    font-size: 2.8rem;
+                    margin-bottom: 3rem;
+                }
+    
+                .about__profile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    gap: 3rem;
+    
+                    .about__icon {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+    
+                        img {
+                            width: 500px;
+                            margin: 0;
+                        }
+                    }
+    
+                    .about__details {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        width: 100%;
+    
+                        .about__name {
+                            font-weight: 700;
+                            color: $heading;
+                            font-size: 2rem;
+                        }
+    
+                        .about__description {
+                            margin: auto;
+                            width: 100%;
+                            font-weight: 500;
+                            font-size: 0.9rem;
+                            line-height: 1.3rem;
+                            padding-top: 0.5rem;
+                            color: $sub-heading;
+                        }
+                    }
+                }
+    
+                .about__skills {
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                    
+                    .skills {
+                        display: flex;
+                        flex-direction: column;
+    
+                        .skills__title {
+                            color: $heading;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: 800;
+                        }
+                    }
+    
+                    .skills__list {
+                        width: 100%;
+                        margin: auto;
+                        display: flex;
+                        flex-flow: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 1.8rem;
+                        gap: 1rem 1rem;
+                        align-items: center;
+    
+                        .skill__card {
+                            display: flex;
+                            align-items: center;
+                        }
+    
+                        .html5 {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 115px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+    
+                        .sass {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 100px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            img {
+                                width: 35px;
+                            }
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+    
+                        .tailwind {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 130px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            img {
+                                width: 35px;
+                            }
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+    
+                        .unity {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 100px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            img {
+                                width: 25px;
+                            }
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+    
+                        .js {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 140px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+    
+                        .github {
+                            display: flex;
+                            border: 2px solid $main-btn;
+                            width: 110px;
+                            height: 50px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: $main-btn;
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+    
+                            .card__title {
+                                width: 100%;
+                                display: flex;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                justify-content: end;
+                                color: $sub-heading;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .header {
+        max-width: 1200px;
+
+        .nav__list__desktop {
+            li {
+                padding-right: 3.5rem;
+            }
+        }
+    }
+
+    .projects {
+        .projects__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1200px;
+            .project__card {
+                width: 100%;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                gap: 0.5rem;
+                background-color: #26354C;
+                overflow: hidden;  
+    
+                a {
+                    color: white;
+                }
+    
+                .card__title {
+                    color: white;
+                    font-size: 1rem;
+                    padding-bottom: 0.5rem;
+                    cursor: default;
+                }
+    
+                .card__data {
+                    overflow: hidden;  
+                    width: 100%;
+                    padding: 1rem;
+                    gap: 10rem;
+                }
+    
+                .open__project {
+                    font-size: 1.5rem;
+                    padding-top: 0.5rem;
+    
+                    .uil-github-alt {
+                        padding-right: 0.5rem;
+                    }
+                }
+    
+                p {
+                    color: $sub-heading;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    padding-bottom: 0.3rem;
+                    cursor: default;
+                }
+                
+                img {
+                    opacity: .7;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    border-top-right-radius: 4px;
+                    border-top-left-radius: 4px;
+                    
+                    &:hover {
+                        transform: scale(1.5);
+                        overflow: hidden;
+                        opacity: 1;
+                        transition: .3s all ease;
+                    }
+                }
+    
+                .card__thumbnail {
+                    overflow: hidden;  
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .home__container {
+        max-width: 1200px;
+    }
+
+    .about__container {
+        max-width: 1200px;
+    }
+
+
+    .home__title {
+        font-size: 70px;
+        font-weight: 800;
+        color: $heading;
+    }
+
+    .home__subtitle {
+        font-size: 40px;
+        font-weight: 700;
+        color: $sub-heading;
+        margin: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    .home__description {
+        width: 50%;
+        font-size: 18px;
+        font-weight: 500;
+        color: $sub-heading;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+
+    .home__buttons {
+        margin: 1.5rem 0rem 0.5rem 0rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+
+        .touch__btn {
+            font-family: $mont;
+            text-transform: uppercase;
+            color: $main-btn;
+            font-size: 13px;
+            font-weight: 600;
+            width: 18%;
+            height: 5%;
+            border: 1.7px solid $main-btn;
+            background-color: $bg;
+
+            &:hover {
+                background-color:$main-btn;
+                color: $bg;
+            }
+        }
+
+        .resume__btn {
+            font-family: $mont;
+            text-transform: uppercase;
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            width: 18%;
+            height: 5%;
+            background-color: $main-btn;
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+}

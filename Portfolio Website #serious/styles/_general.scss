@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button, i {
+    cursor: pointer;
+}
+
+body {
+    background-color: $bg;
+    font-family: $mont;
+}
+
+.nav__list__desktop {
+    display: none;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow:  grey; 
+    border-radius: 5px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(20, 20, 20); 
+
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a; 
+}
+
+.active-link {
+    position: relative;
+    color: $heading;
+    font-weight: 600;
+    font-size: 0.9rem
+}
+
+
+.active-link:hover {
+    color: $main-btn !important;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: $main-btn;
+    transition: width .3s ease-out;
+}

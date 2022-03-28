@@ -1,0 +1,22 @@
+.social__links {
+    height: 100%;
+    display: none;
+
+    .nav__list__mobile {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.2rem;
+
+        li {
+            a {
+                &:hover {
+                    color: $main-btn !important;
+                }
+            }
+        }
+    }
+    
+}

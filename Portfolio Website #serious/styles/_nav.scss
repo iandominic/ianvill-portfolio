@@ -1,0 +1,120 @@
+.header {
+    width: 90%;
+    z-index: 10;
+    margin: auto;
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        &__menu {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                font-weight: 600;
+                display: none;
+                cursor: pointer;
+                
+                &:hover {
+                    color: $main-btn !important;
+                }
+
+            }
+        }
+
+        &__list__mobile {
+            height: 6rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+
+            li {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                a {
+                    font-size: 1.8rem;
+                    color: $heading;      
+                }
+
+                .uil-github-alt {
+                    padding-right: 2.2rem;
+                }
+
+                .uil-instagram {
+                    padding-right: 2.2rem;
+                }
+            }
+        }
+        
+        &__list__desktop {
+            display: flex;
+            flex-direction: row;
+            height: 6rem;
+            align-items: center;
+            display: none;
+
+            li { 
+                padding-right: 2rem;
+
+                a {
+                    position: relative;
+                    color: $heading;
+                    font-weight: 600;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                        color: $main-btn !important;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 0; height: 2px;
+                        display: block;
+                        margin-top: 5px;
+                        right: 0;
+                        background: $main-btn;
+                        transition: width .3s ease-out;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        left: 0;
+                        background: $main-btn;
+                    }
+                }
+            }
+
+            #light-mode {
+                display: none;
+                padding-right: 0rem;
+                font-size: 1.4rem;
+                color: $heading;
+
+                &:hover {
+                    color: $main-btn !important;
+                }
+                
+            }
+
+            #dark-mode {
+                padding-right: 0rem;
+                font-size: 1.4rem;
+                color: $heading;
+
+                &:hover {
+                    color: $main-btn !important;
+                }
+            }
+        }
+    }
+}
